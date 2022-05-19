@@ -8,7 +8,12 @@
 
 .product-card {
   width: 100%;
-  margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   @media screen and (min-width: 480px) {
     width: 450px;
@@ -46,6 +51,7 @@
   }
 
   &__description {
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
