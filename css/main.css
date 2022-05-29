@@ -114,7 +114,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -128,12 +128,7 @@ body {
   }
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header__container {
     display: flex;
     align-items: center;
@@ -141,13 +136,23 @@ body {
   }
 }
 
-.header__wrapper {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header__wrapper {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    margin-left: auto;
+    display: block;
   }
 }
 
@@ -163,14 +168,16 @@ body {
   align-items: center;
 }
 
-.main-nav__list {
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (max-width: 768px) {
   .main-nav__list {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav__list {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -246,7 +253,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .header__contacts--start {
     margin-bottom: 10px;
   }
@@ -470,7 +477,7 @@ body {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mobile.jpg);
     background-repeat: no-repeat;
@@ -479,7 +486,7 @@ body {
   }
 }
 
-@media screen and (max-width: 479px) and (min-device-pixel-ratio: 2), screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 479px) and (min-resolution: 192dpi), screen and (max-width: 479px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_mobile@2x.jpg);
   }

@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -12,19 +12,23 @@
   }
 
   &__container {
-    @include flex(center, null);
-
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       @include flex(center, space-between);
+    }
+
+    @media screen and (min-width: 768px) {
+      @include flex(center, null);
     }
   }
 }
 
 .header__wrapper {
-  margin-left: auto;
-
   @media screen and (max-width: 768px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: block;
   }
 
   @media screen and (min-width: 1200px) {
@@ -36,10 +40,11 @@
   @include flex(center, null);
 
   &__list {
-    @include flex(center, null);
-
     @media screen and (max-width: 768px) {
       display: none;
+    }
+    @media screen and (min-width: 768px) {
+      @include flex(center, null);
     }
   }
 }
@@ -104,7 +109,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     &--start {
       margin-bottom: 10px;
     }
